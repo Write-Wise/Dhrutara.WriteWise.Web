@@ -1,25 +1,7 @@
 const projects = [
-  {
-    id: 'react',
-    name: 'React',
-    path: 'facebook/react',
-    slug: 'facebook-react',
-  },
-  { id: 'vue', name: 'Vue', path: 'vuejs/vue', slug: 'vuejs-vue' },
-  {
-    id: 'svelte',
-    name: 'Svelte',
-    path: 'sveltejs/svelte',
-    slug: 'sveltejs-svelte',
-  },
-  { id: 'next', name: 'Next.js', path: 'zeit/next.js', slug: 'zeit-nextjs' },
-  { id: 'nuxt', name: 'Nuxt.js', path: 'nuxt/nuxt.js', slug: 'nuxt-nuxtjs' },
-  {
-    id: 'gatsby',
-    name: 'Gatsby',
-    path: 'gatsbyjs/gatsby',
-    slug: 'gatsbyjs-gatsby',
-  },
+  { id: 'react', name: 'Privacy Policy', path: 'facebook/react', slug: 'privacy-policy1'},
+  { id: 'vue', name: 'Terms of Use', path: 'vuejs/vue', slug: 'terms-of-use'},
+  { id: 'svelte', name: 'User data deletion', path: 'zeit/next.js', slug: 'user-data-deletion' },
 ];
 
 module.exports = { projects };

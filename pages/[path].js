@@ -4,9 +4,9 @@ import {
   BugIcon,
   GithubIcon,
   projectIcons,
-} from '../../components/Icons';
+} from '../components/Icons';
 import Link from 'next/link';
-import { projects } from '../../utils/projectsData';
+import { projects } from '../utils/projectsData';
 
 function Project({ project }) {
   const Icon = projectIcons[project.id];
@@ -18,7 +18,7 @@ function Project({ project }) {
           {projects.map((project) => {
             return (
               <li key={project.id}>
-                <a href={`/project/${project.slug}`}>{project.name}</a>
+                <a href={`/${project.slug}`}>{project.name}</a>
               </li>
             );
           })}
