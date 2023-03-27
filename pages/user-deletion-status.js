@@ -13,7 +13,7 @@ function UserDeletionStatus() {
     return <div className='home'><h1>Invalid request!</h1></div>
   }
   
-  const { data, error, isLoading } = useSWR(`http://localhost:7071/api/GetDeletedUserStatus?userId=${userid}&provider=${provider}`, fetcher)
+  const { data, error, isLoading } = useSWR(`/api/GetDeletedUserStatus?userId=${userid}&provider=${provider}`, fetcher)
  
   if (error) return <div className='home'><h1>Sorry, failed to fetch status. Please try again later. We have been informed about this issue.</h1></div>
   if (isLoading) return <div>Checking status...</div>
