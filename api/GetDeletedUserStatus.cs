@@ -45,13 +45,13 @@ namespace Dhrutara.WriteWise.Web.Api
           try{
             ItemResponse<DeletedUser> response = await _container.ReadItemAsync<DeletedUser>(userId, new PartitionKey(provider)).ConfigureAwait(false);
             if(response?.Resource != null){
-              return "User details deleted from Write Wise";
+              return "User details deleted from Write Wise.";
             }
           }catch{
             try{
               Microsoft.Graph.Models.User? user = await _graphClient.Users[userId].GetAsync();
               if(user != null){
-                return "Please use Write Wise mobile app to submit user data delation request. Please refer https://writewise.dhrutara.net/user-data-deletion";
+                return "Please use Write Wise mobile app to submit user data delation request. Please refer https://writewise.dhrutara.net/user-data-deletion.";
               }
             }catch{
               throw;
